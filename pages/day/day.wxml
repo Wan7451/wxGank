@@ -1,0 +1,8 @@
+<import src="../../template/gankCard.wxml" />
+<import src="../../template/loading.wxml" />
+<view class="container">
+  <block wx:for="{{items}}" wx:key="{{item._id}}">
+    <template is="indexCard" data="{{data:item}}" />
+  </block>
+  <template is="bottomLoading" data="{{isAdding:isAdding}}" />
+</view>

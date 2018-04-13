@@ -1,0 +1,11 @@
+<import src="../../template/detailCard.wxml" />
+
+<view class='container'>
+  <image src='{{image}}' class='image' mode='widthFix'></image>
+  <block wx:for="{{property}}" wx:for-item="pro" wx:key="{{pro}}">
+    <view class='title'>{{pro}}</view>
+     <block wx:for="{{data[index]}}" wx:key="{{item}}">
+      <template is="detailCard" data="{{data:item}}" />
+    </block> 
+  </block>
+</view>

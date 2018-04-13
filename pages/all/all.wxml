@@ -1,0 +1,21 @@
+<import src="../../template/detailCard.wxml" />
+<import src="../../template/loading.wxml" />
+
+<view class='container'>
+  <view class="swiper-tab">
+    <block wx:for="{{tabs}}" wx:key="{{item}}">
+      <view class="swiper-tab-list {{currentTab==item ? 'on' : ''}}" data-current="{{item}}" bindtap="swichNav">{{item}}</view>
+    </block>
+  </view>
+
+
+  <!-- <listView heightPer='0.94' bind:onDownRefresh="onDownRefresh" bind:onUpRefresh="onUpRefresh" autoLoading isLoading="{{isLoading}}" isLoadingMore="{{isLoadingMore}}"> -->
+  <view style="margin-top: 6vh">
+    <block wx:for="{{items}}" wx:key="{{item._id}}">
+      <template is="detailCard" data="{{data:item}}" />
+    </block>
+    <template is="bottomLoading" data="{{isAdding:isAdding}}" />
+  </view>
+  
+  <!-- </listView> -->
+</view>

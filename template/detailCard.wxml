@@ -1,0 +1,18 @@
+<template name="detailCard">
+  <view class='card-container'>
+
+    <image wx:if="{{data.image}}" class="{{data.shrink?'card-shrink':'card-img'}}" mode='widthFix' src='{{data.image}}'></image>
+
+    <text wx:if="{{data.url}}" selectable="true" class='card-url'>{{data.url}}</text>
+
+    <text wx:if="{{data.desc}}" class='card-desc'>{{data.desc}}</text>
+
+
+
+    <view class='card-author' wx:if="{{data.who}}">
+      <text class='card-who'>{{data.who}}</text>
+      <text class='card-who'>{{data.time}}</text>
+    </view>
+    <view class='divider' />
+  </view>
+</template>

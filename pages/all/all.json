@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "所有干货",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "backgroundColor": "#1296db"
+  
+}

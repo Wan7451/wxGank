@@ -1,0 +1,4 @@
+@import "../../template/gankCard.wxss";
+@import "../../template/loading.wxss";
+
+

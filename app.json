@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/all/all",
+    "pages/day/day",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "Gank干货集中营",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最新",
+        "iconPath":"images/main_hot_normal.png",
+        "selectedIconPath": "images/main_hot_selectd.png"
+      },
+      {
+        "pagePath": "pages/all/all",
+        "text": "所有",
+        "iconPath": "images/main_all_normal.png",
+        "selectedIconPath": "images/main_all_selectd.png"
+      },{
+        "pagePath": "pages/day/day",
+        "text": "日期",
+        "iconPath": "images/main_history_normal.png",
+        "selectedIconPath": "images/main_history_selectd.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<template name="bottomLoading">
+
+  
+    <view hidden='{{!isAdding}}' style="display:flex;padding:15rpx 0;justify-content: center;">
+      <image class='refresh'></image>
+      <text class="loading">loading</text>
+    </view>
+
+</template>
+
+
+<template name="headerLoading">
+ 
+    <view hidden='{{!isAdding}}' style='padding: 15rpx 0;'>
+      <image class='refresh'></image>
+      <text class="loading">loading</text>
+    </view>
+ 
+</template>

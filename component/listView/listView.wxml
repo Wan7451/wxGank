@@ -1,0 +1,11 @@
+<import src="../../template/loading.wxml" />
+<view class='container'>
+
+
+  <scroll-view scroll-y bindscrolltoupper="refresh" style='height:{{height}}px' bindscrolltolower="loadMore">
+    <template is="headerLoading" data="{{isAdding:isLoading}}" />
+    <slot></slot>
+    <template is="bottomLoading" data="{{isAdding:isLoadingMore}}" />
+  </scroll-view>
+
+</view>

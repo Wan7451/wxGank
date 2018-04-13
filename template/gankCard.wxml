@@ -1,0 +1,16 @@
+<template name="indexCard">
+
+  <navigator url="../detail/detail?day={{data.time}}&title={{data.title}}" >
+  <view class='card-container' >
+
+    <image class='card-icon' mode="aspectFill" src='{{data.url}}'></image>
+    <view class='card-content'>
+
+      <text class='card-text'>{{data.title}}</text>
+      <text class='card-time'>{{data.time}}</text>
+    </view>
+  </view>
+  </navigator>
+  <view class='divider' />
+
+</template>

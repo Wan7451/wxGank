@@ -1,0 +1,19 @@
+@import "../../template/detailCard.wxss";
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.image{
+  width: 100%;
+}
+
+.title{
+  color: #333;
+  font-size: 40rpx;
+  font-weight: 900;
+  margin: 20rpx 0rpx 0 30rpx;
+  box-sizing: border-box;
+}
+
+

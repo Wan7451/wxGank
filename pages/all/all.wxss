@@ -1,0 +1,42 @@
+@import "../../template/gankCard.wxss";
+@import "../../template/detailCard.wxss";
+@import "../../template/loading.wxss";
+
+.container{
+  position: relative;
+  overflow: hidden;
+}
+.swiper-tab {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1rpx solid #efeff4;
+  text-align: center;
+  line-height: 6vh;
+  background: white;
+  z-index: 100;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  color: #8a8a8a;
+  margin: 0 22rpx;
+}
+
+.on {
+  color: #1296db;
+  border-bottom: 1px solid #1296db;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
